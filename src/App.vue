@@ -1,11 +1,12 @@
 <template>
-    <ModelForm></ModelForm>
+
+    <CycleComposition></CycleComposition>
    
 </template>
 
 <script lang="ts" setup>
 
-import ModelForm from './components/ModelForm.vue';
+import CycleComposition from './components/CycleComposition.vue';
 
 </script>
 
