@@ -1,12 +1,12 @@
 <template>
 
-    <CycleComposition></CycleComposition>
+    <PostList></PostList>
    
 </template>
 
 <script lang="ts" setup>
 
-import CycleComposition from './components/CycleComposition.vue';
+import PostList from './components/PostList.vue';
 
 </script>
 
