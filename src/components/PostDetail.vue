@@ -9,8 +9,26 @@
 
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 
+    import {defineProps, defineEmits, Ref, ref} from 'vue';
+
+    const props = defineProps(
+        {
+            title: String,
+            content: String
+        });
+
+    const emit = defineEmits(['sayHi']);
+
+    const handleClick = ()=>{
+        emit("sayHi", message.value)
+        message.value = ""
+    }
+
+    let  message:Ref<string> = ref("")
+
+/*
 import {defineComponent, Ref, ref} from 'vue';
 
 export default defineComponent({
@@ -41,6 +59,8 @@ export default defineComponent({
     }
 
 })
+
+*/
 
 </script>
 
