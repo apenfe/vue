@@ -1,12 +1,12 @@
 <template>
 
-    <PostList></PostList>
+    <ComputedInvoice></ComputedInvoice>
    
 </template>
 
 <script lang="ts" setup>
 
-import PostList from './components/PostList.vue';
+import ComputedInvoice from './components/ComputedInvoice.vue';
 
 </script>
 
