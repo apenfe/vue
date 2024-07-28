@@ -1,12 +1,13 @@
-import { computed } from 'vue';
 <template>
     <div>
 
-        <label>Subtotal:</label>
+        <label v-font-size>Subtotal:</label>
         <input type="number" v-model="subtotal"/>
 
-        <h3>Total impuestos a pagar: {{ totalVat }}, {{vat}} % </h3>
-        <h3>Precio final: {{ total }} €</h3>
+        <h3 v-custom-size="10">Total impuestos a pagar: {{ totalVat }}, {{vat}} % </h3>
+        <h3 v-custom-size-argumento:sm>Precio final: {{ total }} €</h3>
+
+        <h3 v-custom-font.xxl.blue>DIRECTIVA CON MODIFICADORES</h3>
 
     </div>
 
